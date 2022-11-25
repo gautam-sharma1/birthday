@@ -12,9 +12,17 @@
     <title>Motu's Birthday</title>
 </head>
 
-<!-- <script src="script.js"></script> -->
+<script src="script.js"></script>
 
 <body>
+
+    <audio id="AD" controls autoplay>
+        <source src="song.ogg" type="audio/ogg">
+        <source src="song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+
     <div class="inline p-2">
         <div>
             <!-- <center>
@@ -401,8 +409,16 @@
         </h2>
     </div>
     <hr>
+    <div>
+        <embed src="song.mp3" autostart=true loop=false width="1px" height="1px">
+    </div>
 </body>
 
+<script>
+    const x = document.getElementById("AD");
+    x.autoplay = true;
+    x.load();
 
+</script>
 
 </html>
