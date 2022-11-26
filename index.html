@@ -60,6 +60,9 @@
                 </p>
 
             </h1>
+
+
+
             <center>
                 <svg version="1.1" id="pig" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2000 2000"
@@ -129,6 +132,7 @@
                C1230.9,522.4,1226.6,514.8,1218.6,512.2L1218.6,512.2z" />
                         </g>
                     </g>
+
                     <g id="tail">
                         <g>
                             <path class="st2"
@@ -161,6 +165,9 @@
 
 
         </div>
+        <center>
+            <a id='btn'>Click me!</a>
+        </center>
 
         <p class="text-end" style="color:rgb(100, 90, 90)">
 
@@ -417,20 +424,22 @@
         </h2>
     </div>
     <hr>
-    <video controls autoplay hidden=true>
+    <video id="myvideo" autoplay controls hidden=true>
         <source src="video.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
+
     <!-- <div>
         <embed src="song.mp3" autostart=true loop=false width="1px" height="1px">
     </div> -->
 </body>
 
-<!-- <script>
-    const x = document.getElementById("AD");
-    x.autoplay = true;
-    x.load();
+<script>
+    var b = document.getElementById('btn');
+    b.addEventListener('click', (e) => {
+        var v = document.getElementById('myvideo').play();
+    })
+</script>
 
-</script> -->
 
 </html>
